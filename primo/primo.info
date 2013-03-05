@@ -1,0 +1,6 @@
+
+name        = Primo
+description = Base theme, provides fundational and ovverrides functions to work with HTML5.
+screenshot  = img/screenshot.png
+core        = 7.x
+engine      = phptemplate

@@ -1,0 +1,14 @@
+{
+  "name": "ineo",
+  "version": "0.1.0",
+  "description": "Drupal 7 theming toolkit.",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-jshint": "~0.2.0"
+  },
+  "repository": "git@github.com:pascalduez/ineo.git",
+  "author": "Pascal Duez",
+  "license": "GPL-2.0",
+  "readmeFilename": "README.md"
+}

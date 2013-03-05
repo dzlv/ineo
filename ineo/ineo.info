@@ -1,0 +1,66 @@
+
+name        = ineo
+description = Starter and toolbox theme.
+screenshot  = img/screenshot.png
+base theme  = primo
+core        = 7.x
+engine      = phptemplate
+
+
+; -----------------------------------------------
+; REGIONS
+; -----------------------------------------------
+
+; REQUIRED CORE REGIONS
+; Page Top, Content, Page Bottom
+
+regions[page_top] = Page Top
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[content_top] = Content top
+regions[content] = Content
+regions[content_bottom] = Content bottom
+regions[footer] = Footer
+regions[page_bottom] = Page Bottom
+
+
+; -----------------------------------------------
+; CSS
+; -----------------------------------------------
+
+stylesheets[all][] = css/vendor/normalize.css
+stylesheets[all][] = css/ineo.css
+
+
+; -----------------------------------------------
+; JS
+; -----------------------------------------------
+
+scripts[] = js/ineo.js
+
+
+; -----------------------------------------------
+; FEATURES
+; -----------------------------------------------
+
+; features[] = logo
+; features[] = name
+; features[] = slogan
+; features[] = node_user_picture
+; features[] = comment_user_picture
+; features[] = search
+; features[] = favicon
+; features[] = primary_links
+; features[] = secondary_links
+
+
+; -----------------------------------------------
+; SETTINGS
+; -----------------------------------------------
+
+; You should definitely make your own Modernizr build and declare it above.
+; The Primo base theme only provide a basic version.
+; settings[modernizr] = vendor/js/modernizr.custom.00000.js
+
+; Add ie conditional classes.
+; settings[ie_support] = 1
