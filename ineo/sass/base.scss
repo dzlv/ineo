@@ -48,9 +48,40 @@ a:hover {
 
 p {
   -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  hyphenate-character: "\2010";
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+
+  -webkit-hyphenate-limit-lines: 2;
+     -moz-hyphenate-limit-lines: 2;
+      -ms-hyphenate-limit-lines: 2;
+          hyphenate-limit-lines: 2;
+
+  -webkit-hyphenate-limit-chars: 6 3 2;
+     -moz-hyphenate-limit-chars: 6 3 2;
+      -ms-hyphenate-limit-chars: 6 3 2;
+          hyphenate-limit-chars: 6 3 2;
+
+  -webkit-hyphenate-limit-zone: 10%;
+     -moz-hyphenate-limit-zone: 10%;
+      -ms-hyphenate-limit-zone: 10%;
+          hyphenate-limit-zone: 10%;
+
+  -webkit-hyphenate-limit-last: always;
+     -moz-hyphenate-limit-last: always;
+      -ms-hyphenate-limit-last: always;
+          hyphenate-limit-last: always;
+
+  -webkit-hyphenate-character: "\2010";
+     -moz-hyphenate-character: "\2010";
+      -ms-hyphenate-character: "\2010";
+          hyphenate-character: "\2010";
+
+  -webkit-font-feature-settings: "liga", "dlig";
+     -moz-font-feature-settings: "liga", "dlig";
+      -ms-font-feature-settings: "liga", "dlig";
+          font-feature-settings: "liga", "dlig";
+
   margin: 15px 0;
 }
 
@@ -68,21 +99,12 @@ i, em {
  * HTML5 Boilerplate
  */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 html,
 button,
 input,
 select,
 textarea {
   color: #222;
-}
-
-body {
-  font-size: 1em;
-  line-height: 1.4;
 }
 
 /*
