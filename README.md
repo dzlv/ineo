@@ -8,7 +8,7 @@ v0.1.0 Needs more cleaning/refactoring/testing.
 
 What it is:
 + A framework, a starter kit for themers to scaffold a new theme.
-+ A base theme `primo` which cares about overriding Drupal 7 default markup to use HTML5. So we shouldn’t worry about those things in our theme.
++ A base theme `primo` which cares about converting (some of) Drupal 7 default markup into HTML5. So we shouldn’t worry about those things in our theme.
 + A starter kit `ineo` with boilerplate and placeholder code.
 
 What it’s not:
@@ -47,8 +47,8 @@ ToDo’s / To consider
 + Accessible tables, use the scope attributes ?
   http://dgo.to/1645308
   http://dgo.to/864006
-+ collapsible fieldsets have been replaced with HTML5 details elements
-  https://drupal.org/node/1852020
++ Collapsible fieldsets have been replaced with HTML5 details elements
+  http://dgo.to/1852020
 
 
 Authors
