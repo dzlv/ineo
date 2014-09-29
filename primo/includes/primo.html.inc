@@ -62,8 +62,10 @@ function primo_preprocess_html(&$variables) {
 function primo_process_html(&$variables) {
   // Flatten out html_attributes and body_attributes.
   $variables['html_attributes'] = drupal_attributes($variables['html_attributes_array']);
-  $variables['rdf_namespaces']  = drupal_attributes($variables['rdf']);
   $variables['body_attributes'] = drupal_attributes($variables['body_attributes_array']);
+  if (isset($variables['rdf'])) {
+    $variables['rdf_namespaces']  = drupal_attributes($variables['rdf']);
+  }
   // Render the head scripts
   $variables['head_scripts'] = drupal_get_js('head_scripts');
 }
