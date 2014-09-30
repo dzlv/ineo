@@ -1,13 +1,24 @@
-/**
- * ineo theme styles.
- */
+//
+// Sass utils
+//
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/helpers";
 
-@import "config";
-@import "mixins";
-@import "fonts";
-@import "base";
-@import "core";
-@import "form";
-@import "ui";
-@import "helper";
-@import "print";
+//
+// Vendors
+//
+// @import "vendors/";
+
+//
+// Base stuff
+//
+@import "base/base";
+
+//
+// Partials
+//
+@import "partials/header";
+@import "partials/main";
+@import "partials/footer";

@@ -1,0 +1,24 @@
+//
+// Map of colors for quick grabbing.
+//
+$colors: (
+  "dark-grey": #666,
+  "white":     #f9f9f9
+) !global;
+
+//
+// Map of breakpoints for responsive design.
+//
+$breakpoints: (
+  "small":  (max-width: 800px),
+  "medium": (min-width: 801px)
+) !global;
+
+
+//
+// Z-indexes layers.
+//
+$z-indexes: (
+  "default": 1,
+  "below":  -1
+) !global;

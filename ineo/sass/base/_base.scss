@@ -1,0 +1,36 @@
+//
+// Univeral box-sizing reset
+//
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+//
+// Body rules
+//
+body {
+  
+}
+
+//
+// Links
+//
+a {
+
+  &:hover {
+
+  }
+}
+
+//
+// Visually-hidden
+//
+.visually-hidden {
+  @include visually-hidden;
+}
