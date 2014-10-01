@@ -28,7 +28,6 @@ regions[page_bottom] = Page Bottom
 ; CSS
 ; -----------------------------------------------
 
-stylesheets[all][] = css/vendor/normalize.css
 stylesheets[all][] = css/ineo.css
 
 
