@@ -57,9 +57,5 @@ scripts[] = js/ineo.js
 ; SETTINGS
 ; -----------------------------------------------
 
-; You should definitely make your own Modernizr build and declare it above.
-; The Primo base theme only provide a basic version.
-; settings[modernizr] = vendor/js/modernizr.custom.00000.js
-
 ; Add ie conditional classes.
 ; settings[ie_support] = 1

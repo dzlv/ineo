@@ -79,7 +79,13 @@ function ineo_process(&$variables, $hook) {
  *   An array of variables to pass to the theme template.
  */
 function ineo_preprocess_html(&$variables) {
+  // Move JS files "$scripts" to page bottom for perfs/logic,
+  // since most jQuery code and Drupal.behaviors wait for DOM .ready() event.
+  // Add JS files that *needs* to be loaded in the head in a new "$head_scripts" scope.
 
+  // Exemple
+  // $path = drupal_get_path('theme', 'ineo');
+  // drupal_add_js($path . 'path/to/js', array('scope' => 'head_scripts'));
 }
 
 /**

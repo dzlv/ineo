@@ -37,23 +37,6 @@ function primo_preprocess_html(&$variables) {
     'class' => $variables['classes_array'],
   );
   $variables['body_attributes_array'] += $variables['attributes_array'];
-
-  // Move JS files "$scripts" to page bottom for perfs/logic,
-  // since most jQuery code and Drupal.behaviors wait for DOM .ready() event.
-  // Add JS files that *needs* to be loaded in the head in a new "$head_scripts" scope.
-
-  // Provide a stripped down version of Modernizr
-  // if a sub-theme does not declare any.
-  if ($modernizr = theme_get_setting('modernizr')) {
-    $theme = $GLOBALS['theme_key'];
-  }
-  else {
-    $theme = 'primo';
-    $modernizr = '/js/vendor/modernizr.custom.js';
-  }
-  $path = drupal_get_path('theme', $theme);
-  $variables['modernizr'] = $path . $modernizr;
-  drupal_add_js($variables['modernizr'], array('scope' => 'head_scripts', 'weight' => -1, 'preprocess' => FALSE));
 }
 
 /**
