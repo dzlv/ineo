@@ -98,7 +98,7 @@ function primo_html_head_alter(&$head_elements) {
       '#tag' => 'meta',
       '#attributes' => array(
         'name' => 'viewport',
-        'content' => 'width=device-width',
+        'content' => 'width=device-width, initial-scale=1',
       ),
     ),
     // Mobile IE allows to activate ClearType technology for smoothing fonts.
