@@ -68,12 +68,12 @@ function primo_html_head_alter(&$head_elements) {
       ),
     ),
     // Force the latest IE rendering engine and Google Chrome Frame.
-    'chrome_frame' => array(
+    'ie_rendering' => array(
       '#type' => 'html_tag',
       '#tag' => 'meta',
       '#attributes' => array(
         'http-equiv' => 'X-UA-Compatible',
-        'content' => 'IE=edge,chrome=1',
+        'content' => 'IE=edge',
       ),
     ),
     // Optimize the mobile viewport.
