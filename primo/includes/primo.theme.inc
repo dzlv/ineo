@@ -73,12 +73,14 @@ function primo_item_list($variables) {
   $title = $variables['title'];
   $type = $variables['type'];
   $attributes = $variables['attributes'];
+
   $wrapper_attributes = isset($variables['wrapper_attributes']) ? $variables['wrapper_attributes'] : array();
   if (empty($wrapper_attributes['class'])) {
     $wrapper_attributes['class'] = array('item-list');
   }
 
-  $output = '<div' . drupal_attributes($wrapper_attributes) . '>';
+  $output = '';
+
   if (isset($title)) {
     $output .= '<h3>' . $title . '</h3>';
   }
@@ -120,7 +122,11 @@ function primo_item_list($variables) {
     }
     $output .= "</$type>";
   }
-  $output .= '</div>';
+
+  if (isset($variables['wrapper'])) {
+    $output = '<div' . drupal_attributes($wrapper_attributes) . '>' . $output . '</div>';
+  }
+
   return $output;
 }
 
