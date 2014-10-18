@@ -39,11 +39,8 @@ Start a new subtheme with `make NAME="newthemename"`
 ToDo’s / To consider
 --------------------
 
-+ Switch from makfile to Drush or Grunt.
-+ Remove the custom Modernizr stuff and advocate the use of Modernizr module.
-  https://github.com/Modernizr/Modernizr/issues/713
++ Switch from makfile to Drush or Yeoman.
 + The region wrappers pruning is a bit agressive, find a more flexible system.
-+ More SASS/Compass stuff ?
 + Accessible tables, use the scope attributes ?
   http://dgo.to/1645308
   http://dgo.to/864006
@@ -62,6 +59,6 @@ Authors
 License
 ---------------------
 
-Copyright 2011-2013 Pascal Duez.
+Copyright 2011-2014 Pascal Duez.
 
 Licensed under the GNU General Public License, version 2 - http://www.gnu.org/licenses/gpl-2.0.html
